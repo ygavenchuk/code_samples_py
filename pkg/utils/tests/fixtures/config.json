@@ -1,0 +1,12 @@
+{
+    "test_set_property": [
+        [
+            "NOTES_MAX_FILENAME_SIZE",
+            10
+        ],
+        [
+            "NOTES_MAX_TEXT_SIZE",
+            999
+        ]
+    ]
+}
