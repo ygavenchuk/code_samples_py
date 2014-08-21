@@ -20,8 +20,13 @@ class FixtureManager(object):
 
         :return str:
         """
+
+        # if extension of file's name in __file__ is '.pyc' or '.pyo' then next file will be with the same
+        # name but with extension '.py'!!! So, we need to use generalized extension of file
+        file_with_normalized_ext = __file__[:-1] if __file__[-1] in set('oc') else __file__
+
         for item in inspect_stack():
-            if item and __file__ not in item:
+            if item and file_with_normalized_ext not in item:
                 return item[1]
 
         return __file__
