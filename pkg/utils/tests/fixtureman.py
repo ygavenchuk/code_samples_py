@@ -63,7 +63,7 @@ class FixtureManager(object):
             :param fixture_name: string - name of fixture, which data need to return
             :return: Iterable - if fixture_name doesn't exists - will be returned an empty dict
         """
-        result = self.fixture_data[fixture_name] if fixture_name in self.fixture_data else dict
+        result = self.fixture_data[fixture_name] if fixture_name in self.fixture_data else {}
 
         return deepcopy(result)
 
