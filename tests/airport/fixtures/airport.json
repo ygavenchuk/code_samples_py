@@ -1,0 +1,14 @@
+{
+    "invalid_place": [
+        [null],
+        [{
+            "foo-bar": "foo-bar"
+        }]
+    ],
+    "no_place": [
+    ],
+    "single_place": [
+    ],
+    "multiple_places": [
+    ]
+}
