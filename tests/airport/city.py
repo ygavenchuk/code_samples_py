@@ -5,7 +5,7 @@ from .base import *
 
 
 __author__ = 'y.gavenchuk'
-__all__ = ['CityNotFoundTestCase', 'CityFoundMeta', 'MultiCitiesFoundTestCase', ]
+__all__ = ['CityNotFoundTestCase', 'CityFoundTestCase', 'MultiCitiesFoundTestCase', ]
 
 _fx_places = FixtureManager()
 _fx_places.load(fixture_file='city')
